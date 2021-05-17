@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contest Code</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="dream11 private contest codes"/>
+	<meta name="keywords" content="ipl, dream11, my11circle, private, contest, code, mi, csk, rcb, srh, rr, kkr, kxip, dc, vs">
+	<meta name="author" content="Contest Code">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="./myCss.css">
+
+<!-- Bt -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- req movie slid --> <!-- slider-1 + moving slider req. (3 sss) --> <!--up pos -->
+	<!-- req fr contact form script ajax 1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Bt -->
+
+	<script src="contcus.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  -->
+	<script src="https://skdhameliya.github.io/skdJs/matches.js"></script>
+
+	<style type="text/css">
+		*{
+			scroll-behavior: smooth;
+		}
+	</style>
+
+</head> 
+
+<body onload="countMe()"> 
+	
+	<div style="width: 100%;height: 80px;background: black; border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;">
+		<h1 class="text-center text-white pt-2">Contest Code</h1>
+	</div>
+
+
+	<style type="text/css">
+		.tableDiv{
+			box-shadow: 0 0 50px black;
+		}
+	</style>
+
+	<div class="container mt-5 tableDiv">
+		<div class="row scroll1 m-1">
+			<div class="col-sm-12 mt-3" id="myTable"></div>
+		</div>
+	</div>
+
+	<script>
+		// function skdFun(){
+			var str = "";
+
+			str = "<table class='table table-striped table-dark'>";
+				str += "<thead><tr>";
+					str += "<th scope='col'>Match Name</th>";
+					str += "<th scope='col'>Entry Fees</th>";
+					str += "<th scope='col'>Prize Pool</th>";
+					str += "<th scope='col'>Contest Size</th>";
+					str += "<th scope='col'>No of Winners</th>";
+					str += "<th scope='col'>Multi-Entry?</th>";
+					str += "<th scope='col'>Contest Code</th>";
+					str += "</tr></thead>";
+				str += "<tbody>";
+					for(i=0; i<myMain["myMatch"].length; i++){
+							
+						str += "<tr>";
+
+							str += "<th scope='row'>";
+							str += myMain["myMatch"][i].match;
+							str += "</th>";
+
+							str += "<td>";
+							str += myMain["myMatch"][i].entry;
+							str += "</td>";
+
+							str += "<td>";
+							str += myMain["myMatch"][i].prize;
+							str += "</td>";
+
+							str += "<td>";
+							str += myMain["myMatch"][i].size;
+							str += "</td>";
+
+							str += "<td>";
+							str += myMain["myMatch"][i].winner;
+							str += "</td>";
+
+							str += "<td>";
+							str += myMain["myMatch"][i].multientry;
+							str += "</td>";
+
+							str += "<td>";
+							str += myMain["myMatch"][i].code;
+							str += "</td>";
+
+						str += "</tr>";
+						
+					}
+				str += "</tbody>";
+			str += "</table>";
+
+			document.getElementById("myTable").innerHTML = str;
+			// }
+	</script>
+
+
+<style type="text/css">
+	.formDiv{
+		box-shadow: 0 0 50px black;
+	}
+</style>
+	
+	<div class="container mt-5 mb-5 formDiv p-5">
+		<h1 class="text-center mb-5">Fill Your Contest Now...</h1>
+		<form target="_self" onsubmit="return postForm();" action="" autocomplete="off">
+			<div class="form-row">
+				<div class="form-group col-6 col-lg-3"></div>
+				<div class="form-group col-12 col-lg-3">
+					<label for="inputEmail4"><b>Match Name</b></label>
+					<input type="text" class="form-control" name="entry.1997518946" id="matchname1" placeholder="MI vs CSK" required>
+				</div>
+				<div class="form-group col-12 col-lg-3">
+					<label for="inputEmail4"><b>Contest Code</b></label>
+					<input type="text" class="form-control" name="entry.1799278287" id="contestcode1" placeholder="awd7834@DFT547DFv" required>
+				</div>
+				<div class="form-group col-6 col-lg-3"></div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-6 col-lg-3">
+					<label for="inputEmail4"><b>Prize Pool</b></label>
+					<input type="number" class="form-control" name="entry.504100556" id="prizepool1" placeholder="1000" required>
+				</div>
+				<div class="form-group col-6 col-lg-3">
+					<label for="inputEmail4"><b>Entry Fee</b></label>
+					<input type="number" class="form-control" name="entry.1988504757" id="entryfee1" placeholder="50" required>
+				</div>
+				<div class="form-group col-6 col-lg-3">
+					<label for="inputEmail4"><b>Contest Size</b></label>
+					<input type="number" class="form-control" name="entry.754838729" id="contestsize1" placeholder="15" required>
+				</div>
+				<div class="form-group col-6 col-lg-3">
+					<label for="inputEmail4"><b>No. of Winners</b></label>
+					<input type="number" class="form-control" name="entry.378989266" id="winner1" placeholder="5" required>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-6 col-lg-3"></div>
+				<div class="form-group col-12 col-lg-3">
+					<label for="inputAddress"><b>Email</b></label>
+					<input type="email" class="form-control" name="entry.5153382" id="email1" placeholder="johnsteyn10@gmail.com" required>
+				</div>
+				<div class="form-group col-12 col-lg-3">
+					<label for="inputState"><b>Multi-Entry?</b></label>
+					<select name="entry.1055593588" id="multientry1" class="form-control" required>
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>					
+					</select>
+				</div>
+				<div class="form-group col-6 col-lg-3"></div>
+			</div>
+			<center><button type="submit" class="btn btn-primary">Submit</button></center>
+		</form>
+	</div>
+	<style type="text/css">
+		#submitFormMsg{
+			display: none;
+			background: black;
+			color: green;
+		}
+	</style>
+
+	<h3 class="text-center mt-5 p-5" id="submitFormMsg">"If your data is true then within an hour your data will be displayed. Thank you for choosing us."</h3>
+
+<div class="pt-2" style="width: 100%;height: 50px;background: black; border-top-left-radius: 50%;border-top-right-radius: 50%;">
+		<center><a href="#" class="text-white">Back To Top</a></center>
+</div>
+
+<script type="text/javascript">
+	function hello(str){
+		alert("aa--",str);
+	}
+	function myCount(){
+		
+	}
+</script>
+
+</body>
+</html>

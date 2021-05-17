@@ -1,0 +1,5 @@
+div.scroll1 {
+    background-color: inherit;
+    overflow: auto;
+    white-space: nowrap;
+}
